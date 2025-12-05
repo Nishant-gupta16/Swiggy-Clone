@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px 7rem;
+
+    /* border: 2px solid red; */
+
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.137);
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 5;
+}
+
+.headerChild {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.right li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.imageWrapper {
+    height: 3rem;
+    width: 3rem;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.other {
+    display: flex;
+    gap: 1rem;
+}
+
+.other p{
+    border-bottom: 2px solid black;
+    padding-bottom: 0.2rem;
+}
+
+
+/* ==================== */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    list-style: none;
+}
+
+
+/* =================================== */
+
+main {
+    margin: 2rem 6rem;
+}
+
+.category {
+    /* border: 2px solid red; */
+    padding: 2.5rem 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.351);
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrowBtns {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.fa-arrow-left {
+    color: rgb(169, 169, 169);
+    background-color: #e9eaea;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.fa-arrow-right {
+    color: black;
+    background-color: #d8d9da;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+/* ======================== */
+
+.images {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.images::-webkit-scrollbar {
+    display: none;
+}
+
+/* ====================== */
+
+.cardSection {
+    /* padding: 1rem; */
+}
+
+.card {
+    /* border: 2px solid red; */
+    padding: 1rem;
+    
+    
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+
+    transition: all 0.3s;
+}
+
+.card:hover {
+    transform: scale(0.97);
+
+}
+
+.image{
+    width: 17rem;
+    background: url(https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/enj3srsnhbltbom2ovvh) no-repeat center center/cover;
+
+    /* border: 2px solid green; */
+    height: 12rem;
+    display: flex;
+    align-items: end;
+
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+#img1 {
+    background: url(https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/enj3srsnhbltbom2ovvh) no-repeat center center/cover;
+}
+
+#img2 {
+    background: url(https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/vkhcohhmqfczycw9vsar) no-repeat center center/cover;
+
+}
+#img3{
+    background: url(https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/6/24/7f7d90cd-b575-471a-83fe-74fe7491ee8c_714096.JPG) no-repeat center center/cover;
+
+}
+#img4{
+    background: url(https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/6/12/cf40a8a9-7a7d-4cc0-83ff-7f286a9f53a2_766478.jpg) no-repeat center center/cover;
+
+}
+#img5{
+    background: url(https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/8/22/7cb21566-d361-40aa-abc2-643dde1b0d30_403809.JPG) no-repeat center center/cover;
+
+}
+#img6{
+    background: url(https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/8/21/5a841b47-792a-4ab0-b06f-7e91b891bf3e_86719.JPG) no-repeat center center/cover;
+
+}
+#img7{
+    background: url(https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/10/27/e8390035-0924-4b76-8139-53b2bc1f8a67_80653.JPG) no-repeat center center/cover;
+
+}
+#img8{
+    background: url(https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/10/16/57d1dfaa-46c7-42d0-9890-0bc0725392fb_86044.jpg) no-repeat center center/cover;
+
+}
+#img9{
+    background: url(https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/7/28/54927150-5039-4b17-8043-225576d203be_80650.JPG) no-repeat center center/cover;
+
+}
+#img10{
+    background: url(https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/b1h0agx8ysx7w6ybrygc) no-repeat center center/cover;
+
+}
+#img11{
+    background: url(https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2025/6/18/258f53ef-fe93-4523-902c-37f3229b1a39_806682.jpg) no-repeat center center/cover;
+
+}
+.image h2 {
+    /* border: 2px solid blue; */
+    height: 5rem;
+    display: flex;
+    align-items: end;
+    color: white;
+    background: linear-gradient(transparent, black);
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.content h2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+}
+
+.time {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.time i {
+    background-color: green;
+    color: white;
+    border-radius: 50%;
+    padding: 3px;
+    font-size: 0.7rem;
+}
+
+/* ===================== scrollbar ======================== */
+
+.cardSection::-webkit-scrollbar{
+    display: inline-block !important;
+    /* border: 2px solid red; */
+    height: 4px;
+    
+}
+
+.cardSection::-webkit-scrollbar-track {
+    background-color: rgb(239, 239, 239);
+    width: 10rem;
+    margin: 0 39.5rem;
+    border-radius: 2rem;
+}
+
+.cardSection::-webkit-scrollbar-thumb{
+    background-color: orangered;
+    height: 2px;
+    border-radius: 1rem;
+}
+
+
+/* ===================================== */
+
+.restaurants {
+    margin: 2rem 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+}
+
+.featureBtns {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.featureBtn {
+    border: 1px solid black;
+    border-radius: 3rem;
+    padding: 5px 10px;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.featureBtn i {
+    font-size: 12px;
+}
+
+.cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* ========================================= */
+
+.bestPlaces {
+    margin: 0 3rem;
+}
+
+.cities {
+    /* border: 2px solid red; */
+    padding: 1rem 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.city {
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+.city1{
+    color: #FF5200;
+}
+.bestCuisines{
+    margin-top: 3rem
+}
+
+.linelast1 {
+
+    border: .3px solid rgba(0, 0, 0, 0.177);
+    margin-top: 6rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+/*////////////////fotar////////////// */
+footer{
+    background-color: #F0F0F5;
+    height: 21rem;
+
+}
+.lastbg{
+      /* border: 2px solid rgba(0, 0, 0, 0.847); */
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-top: 2rem;
+   
+}
+.swiggyApp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+}
+.swiggyLimited{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 6rem;
+}
+
+.Company{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    margin-top: 7rem;
+    
+
+}
+.Company a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.549);
+}
+.AboutUs{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+.legal1{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+.legal{
+    margin-top: 6.2rem;
+    gap: .7rem;
+    display: flex;
+    flex-direction: column;
+}
+.swiggyLimited img{
+    margin-top: 7rem;
+}
+#but1 button {
+   padding: .4rem 1.3rem;
+   border-radius: 8px;
+  background-color: #F0F0F5;
+ border-color: rgba(152, 143, 143, 0.427);
+ display: flex;
+ justify-content: center ;
+ align-items: center;
+ gap: 1rem;
+  
+}
+.Social1{
+    margin-top: 8rem;
+}
+.Social1{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+.sicon1 {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: row;
+}
+.right li:hover{
+    color: #FF5200;
+}
